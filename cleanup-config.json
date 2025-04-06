@@ -1,0 +1,56 @@
+{
+  "directories": {
+    "frontend": "src",
+    "backend": "backend",
+    "database": "database",
+    "publicAssets": "public"
+  },
+  "essentialPatterns": [
+    "^\\.env",
+    "config\\.(js|ts|json)$",
+    "package(-lock)?\\.json$",
+    "tsconfig.*\\.json$",
+    "README\\.md$",
+    "\\.gitignore$",
+    "server\\.js$",
+    "vite\\.config\\.ts$",
+    "tailwind\\.config\\.js$",
+    "postcss\\.config\\.js$",
+    "restart\\.ps1$"
+  ],
+  "essentialDirectories": [
+    "node_modules",
+    "src",
+    "backend",
+    "public",
+    "controllers",
+    "models",
+    "routes",
+    "config",
+    "components",
+    "contexts",
+    "pages",
+    "services",
+    "hooks",
+    "utils",
+    "lib"
+  ],
+  "artifactExtensions": [
+    ".log",
+    ".tmp",
+    ".temp",
+    ".DS_Store",
+    ".bak",
+    "Thumbs.db"
+  ],
+  "accessThresholdDays": 30,
+  "backupDir": ".file-backup",
+  "backupRetentionDays": 14,
+  "logFile": "cleanup-log.txt",
+  "options": {
+    "promptBeforeDeletion": true,
+    "removeEmptyDirectories": true,
+    "removeEmptyFrontend": true,
+    "createBackups": true
+  }
+} 
